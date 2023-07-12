@@ -38,4 +38,7 @@ public class FibonacciTest {
         int twoFibonacci = fibonacci.find(2);
         assertEquals(1, twoFibonacci);
     }
+    public void numbers(){
+
+    }
 }

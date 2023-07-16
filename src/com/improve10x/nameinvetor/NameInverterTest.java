@@ -26,7 +26,6 @@ public class NameInverterTest {
         assertEquals("",inverterName);
     }
 
-    //input - "name" , output -"name"
     @Test
     public void givenSingleWord_returnSingleWord(){
         String inverterName  = nameInverter.invertName("name");
@@ -44,19 +43,28 @@ public class NameInverterTest {
         String inverterName  = nameInverter.invertName(" name  ");
         assertEquals("name",inverterName);
     }
+
     @Test
     public void givenFirstLast_returnInverterName(){
         String inverterName = nameInverter.invertName("first last");
         assertEquals("last, first",inverterName);
     }
+
     @Test
     public void givenHonorifics_ignoreHonorifics(){
-        String invertername = nameInverter.invertName("Mrs. first last");
-        assertEquals("last, first", invertername);
+        String inverterName = nameInverter.invertName("Mrs. first last");
+        assertEquals("last, first", inverterName);
     }
+
     @Test
     public void givenMrHonorifics_ignoreHonorifics(){
-        String invertername = nameInverter.invertName("Mr. first last");
-        assertEquals("last, first", invertername);
+        String inverterName = nameInverter.invertName("Mr. first last");
+        assertEquals("last, first", inverterName);
+    }
+
+    @Test
+    public void givenMultiPostNominals_stayAtEnd(){
+        String inverterName = nameInverter.invertName("first last.Msc");
+        assertEquals("last, first, Msc.", inverterName);
     }
 }

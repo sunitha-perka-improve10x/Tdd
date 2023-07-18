@@ -11,6 +11,21 @@ public class MinutesToSecondsTest {
     @Test
     public void nothing(){
     }
+
+    @Test
+    public void givenNegativeValues(){
+        MinutesToSeconds minutesToSeconds = new MinutesToSeconds();
+        int minutes = minutesToSeconds.minutesSeconds(-1);
+        assertEquals(-60,minutes);
+
+    }
+    @Test
+    public void givenZero(){
+        MinutesToSeconds minutesToSeconds = new MinutesToSeconds();
+        int minutes = minutesToSeconds.minutesSeconds(0);
+        assertEquals(0,minutes);
+    }
+
     @Test
     public void minutesToSeconds(){
         MinutesToSeconds minutesToSeconds = new MinutesToSeconds();

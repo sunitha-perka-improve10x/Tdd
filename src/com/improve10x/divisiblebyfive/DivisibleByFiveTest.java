@@ -1,16 +1,17 @@
 package com.improve10x.divisiblebyfive;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class DivisibleByFiveTest {
-    private Divisible divisible;
+    private  Divisible divisible;
 
-    @Test
+    @BeforeEach
     public  void setUp(){
-        Divisible divisible = new Divisible();
+        divisible = new Divisible();
 
     }
 
@@ -40,4 +41,18 @@ public class DivisibleByFiveTest {
         boolean ninthDivisible = divisible.isDivisibleByFive(9);
         assertEquals(false, ninthDivisible);
     }
+
+    @Test
+    public void given125_returnZero(){
+        boolean oneTwentyFiveDivisible = divisible.isDivisibleByFive(125);
+        assertEquals(true, oneTwentyFiveDivisible);
+    }
+
+    @Test
+    public void given243_returnFortyNine(){
+        boolean oneTwentyFiveDivisible = divisible.isDivisibleByFive(243);
+        assertEquals(false, oneTwentyFiveDivisible);
+    }
 }
+
+

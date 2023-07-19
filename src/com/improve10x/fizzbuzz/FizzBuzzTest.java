@@ -26,7 +26,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void givenFive_returnB() {
+    public void givenFive_returnEmpty() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String NegativeFive = fizzBuzz.findFizzBuzz(-5);
         assertEquals("", NegativeFive);
@@ -40,7 +40,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void givenMinusTen_returnMinusTen() {
+    public void givenMinusTen_returnMinusEmpty() {
         FizzBuzz fizzBuzz = new FizzBuzz();
         String ten = fizzBuzz.findFizzBuzz(-10);
         assertEquals("", ten);

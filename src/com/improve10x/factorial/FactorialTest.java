@@ -44,4 +44,10 @@ public class FactorialTest {
         long factorialNumber = factorial.findFactorial(10);
         assertEquals(3628800, factorialNumber);
     }
+    @Test
+    public void givenNegativeNumber_returnNegative(){
+        Factorial factorial = new Factorial();
+        long factorialNumber = factorial.findFactorial(-3);
+        assertEquals(-1, factorialNumber);
+    }
 }

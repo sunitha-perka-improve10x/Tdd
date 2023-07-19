@@ -38,4 +38,10 @@ public class FactorialTest {
         long factorialNumber = factorial.findFactorial(5);
         assertEquals(120, factorialNumber);
     }
+    @Test
+    public void givenTen_returnThousand(){
+        Factorial factorial = new Factorial();
+        long factorialNumber = factorial.findFactorial(10);
+        assertEquals(3628800, factorialNumber);
+    }
 }

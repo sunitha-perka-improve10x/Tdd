@@ -24,10 +24,18 @@ public class FactorialTest {
         long factorialNumber = factorial.findFactorial(0);
         assertEquals(1, factorialNumber);
     }
+
     @Test
     public void given4_returnTwentyFour(){
         Factorial factorial = new Factorial();
         long factorialNumber = factorial.findFactorial(4);
         assertEquals(24, factorialNumber);
+    }
+
+    @Test
+    public void givenFive_returnOneTwenty(){
+        Factorial factorial = new Factorial();
+        long factorialNumber = factorial.findFactorial(5);
+        assertEquals(120, factorialNumber);
     }
 }

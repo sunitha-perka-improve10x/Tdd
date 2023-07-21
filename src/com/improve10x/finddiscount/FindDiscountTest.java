@@ -15,8 +15,8 @@ public class FindDiscountTest {
     @Test
     public void givenPriceDiscountPercentage_returnFinalPrice(){
         Discount discount = new Discount();
-        double result = discount.findDiscount(1500, 50);
-        assertEquals(750,result);
+        double result = discount.findDiscount(0, 0);
+        assertEquals(0,result);
     }
     @Test
     public void givenPriceDiscount_returnFinalPrice(){

@@ -16,4 +16,10 @@ public class FirstElementArrayTest {
         int zero = firstElement.FindFirstElement(new int[]{0, 0, 0});
         assertEquals(0, zero);
     }
+    @Test
+    public void givenMinusOne_returnMinusOne(){
+        FirstElement firstElement = new FirstElement();
+        int minusOne = firstElement.FindFirstElement(new int[]{-1, -1});
+        assertEquals(-1,minusOne);
+    }
 }

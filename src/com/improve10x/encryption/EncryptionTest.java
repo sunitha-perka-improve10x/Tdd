@@ -95,17 +95,17 @@ public class EncryptionTest {
     }
 
     @Test
-    public void givenCharan_returnN0r0hcAca(){
+    public void givensunitha_return0ht2n4saca(){
         Encryption encryption = new Encryption();
-        String returnAca = encryption.encrypt("Charan");
-        assertEquals("n0r0hCaca", returnAca);
+        String returnAca = encryption.encrypt("sunitha");
+        assertEquals("0ht2n4saca", returnAca);
     }
 
     @Test
-    public void givenSukanya_return0yn0k3S(){
+    public void givenanupama_return0m0p4n0aca(){
         Encryption encryption = new Encryption();
-        String returnAca = encryption.encrypt("Sukanya");
-        assertEquals("0yn0k4Saca", returnAca);
+        String returnAca = encryption.encrypt("anupama");
+        assertEquals("0m0p4n0aca", returnAca);
     }
 
     @Test

@@ -1,4 +1,8 @@
-package com.improve10x;
+package com.improve10x.palindrome;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Palindrome {
     public boolean findPalindrome(String name) {

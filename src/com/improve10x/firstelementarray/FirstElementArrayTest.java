@@ -28,4 +28,12 @@ public class FirstElementArrayTest {
         int one = firstElement.FindFirstElement(new int[]{1, 1});
         assertEquals(1, one);
     }
+    @Test
+    public void givenOneTwoThree_returnOne(){
+        FirstElement firstElement = new FirstElement();
+        int oneTwoThree = firstElement.FindFirstElement(new int[]{1, 2, 3});
+        assertEquals(1, oneTwoThree);
+    }
+
 }
+

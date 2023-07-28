@@ -46,5 +46,11 @@ public class FirstElementArrayTest {
         int values = firstElement.FindFirstElement(new int[]{-500, 0, 50});
         assertEquals(-500, values);
     }
+    @Test
+    public void givenEmpty_returnZero(){
+        FirstElement firstElement = new FirstElement();
+        int values = firstElement.FindFirstElement(new int[]{});
+        assertEquals(0, values);
+    }
 }
 

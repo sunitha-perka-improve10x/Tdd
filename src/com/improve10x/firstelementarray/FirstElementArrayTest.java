@@ -22,4 +22,10 @@ public class FirstElementArrayTest {
         int minusOne = firstElement.FindFirstElement(new int[]{-1, -1});
         assertEquals(-1,minusOne);
     }
+    @Test
+    public void givenOne_returnOne(){
+        FirstElement firstElement = new FirstElement();
+        int one = firstElement.FindFirstElement(new int[]{1, 1});
+        assertEquals(1, one);
+    }
 }

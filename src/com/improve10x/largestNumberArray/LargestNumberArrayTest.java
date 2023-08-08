@@ -18,11 +18,15 @@ public class LargestNumberArrayTest {
         assertEquals(0,zero);
     }
     @Test
-    public void givenEmpty_returnNull(){
+    public void givenEmpty_returnZero(){
         LargestNumber largestNumber = new LargestNumber();
         int empty = largestNumber.findLargestNumber(new int[]{});
-        assertEquals(empty, empty);
+        assertEquals(0, empty);
     }
-
-
+    @Test
+    public void givenNull_returnZero(){
+        LargestNumber largestNumber = new LargestNumber();
+        int nullValue= largestNumber.findLargestNumber(null);
+        assertEquals(0, nullValue);
+    }
 }

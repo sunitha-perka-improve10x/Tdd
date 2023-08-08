@@ -15,4 +15,10 @@ public class SumExistsTest {
         String sumOfTwo = sumexists.findSumofExists(null,0);
         Assertions.assertEquals("no",sumOfTwo);
     }
+    @Test
+    public void givenEmpty_returnNo(){
+        Sumexists sumexists = new Sumexists();
+        String sumOfTwo = sumexists.findSumofExists(new int[]{},0);
+        Assertions.assertEquals("no",sumOfTwo);
+    }
 }

@@ -3,6 +3,8 @@ package com.improve10x.sumexists;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class SumExistsTest {
 
     @Test
@@ -13,19 +15,25 @@ public class SumExistsTest {
     public void givenNull_returnNo(){
         Sumexists sumexists = new Sumexists();
         String sumOfTwo = sumexists.findSumofExists(null,0);
-        Assertions.assertEquals("no",sumOfTwo);
+        assertEquals("no",sumOfTwo);
     }
     @Test
     public void givenEmpty_returnNo(){
         Sumexists sumexists = new Sumexists();
         String sumOfTwo = sumexists.findSumofExists(new int[]{},0);
-        Assertions.assertEquals("no",sumOfTwo);
+        assertEquals("no",sumOfTwo);
     }
     @Test
     public void givenOneElement_returnNo(){
         Sumexists sumexists = new Sumexists();
-        String sumOfTwo = sumexists.findSumofExists(new int[]{},0);
-        Assertions.assertEquals("no",sumOfTwo);
+        String sumOfTwo = sumexists.findSumofExists(new int[]{0},0);
+        assertEquals("no",sumOfTwo);
+    }
+    @Test
+    public void givenZeroOne_returnYes(){
+        Sumexists sumexists = new Sumexists();
+        String sumOfTwo = sumexists.findSumofExists(new int[]{0, 1},1);
+        assertEquals("Yes",sumOfTwo);
     }
 
 }

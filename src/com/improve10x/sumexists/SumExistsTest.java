@@ -17,22 +17,32 @@ public class SumExistsTest {
         String sumOfTwo = sumexists.findSumofExists(null,0);
         assertEquals("no",sumOfTwo);
     }
+
     @Test
     public void givenEmpty_returnNo(){
         Sumexists sumexists = new Sumexists();
         String sumOfTwo = sumexists.findSumofExists(new int[]{},0);
         assertEquals("no",sumOfTwo);
     }
+
     @Test
     public void givenOneElement_returnNo(){
         Sumexists sumexists = new Sumexists();
         String sumOfTwo = sumexists.findSumofExists(new int[]{0},0);
         assertEquals("no",sumOfTwo);
     }
+
     @Test
     public void givenZeroOne_returnYes(){
         Sumexists sumexists = new Sumexists();
         String sumOfTwo = sumexists.findSumofExists(new int[]{0, 1},1);
+        assertEquals("Yes",sumOfTwo);
+    }
+
+    @Test
+    public void givenNegative_returnYes(){
+        Sumexists sumexists = new Sumexists();
+        String sumOfTwo = sumexists.findSumofExists(new int[]{-1, -1},-2);
         assertEquals("Yes",sumOfTwo);
     }
 

@@ -61,9 +61,9 @@ public class SumExistsTest {
     }
 
     @Test
-    public void givenOneOneTwoThree_returnNo(){
+    public void givenOneOneTwoThree_returnYes(){
         Sumexists sumexists = new Sumexists();
-        String sumOfTwo = sumexists.findSumofExists(new int[]{-1, -1, -3, -5},-10);
+        String sumOfTwo = sumexists.findSumofExists(new int[]{1, 1, 2, 3},5);
         assertEquals("Yes",sumOfTwo);
     }
 

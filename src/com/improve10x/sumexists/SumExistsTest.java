@@ -53,6 +53,13 @@ public class SumExistsTest {
         assertEquals("Yes",sumOfTwo);
     }
 
+    @Test
+    public void givenNegative_returnNo(){
+        Sumexists sumexists = new Sumexists();
+        String sumOfTwo = sumexists.findSumofExists(new int[]{-1, -1, -3, -5},-10);
+        assertEquals("Yes",sumOfTwo);
+    }
+
 
 
 }

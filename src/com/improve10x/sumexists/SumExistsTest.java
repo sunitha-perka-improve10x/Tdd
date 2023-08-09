@@ -82,7 +82,10 @@ public class SumExistsTest {
         assertEquals("No",sumOfTwo);
     }
 
-
-
-
+    @Test
+    public void given189_returnYes(){
+        Sumexists sumexists = new Sumexists();
+        String sumOfTwo = sumexists.findSumofExists(new int[]{1, 8, 9},9);
+        assertEquals("Yes",sumOfTwo);
+    }
 }

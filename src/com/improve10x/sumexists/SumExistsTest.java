@@ -67,8 +67,12 @@ public class SumExistsTest {
         assertEquals("Yes",sumOfTwo);
     }
 
-
-
+    @Test
+    public void given265811_returnYes(){
+        Sumexists sumexists = new Sumexists();
+        String sumOfTwo = sumexists.findSumofExists(new int[]{2, 6, 5, 8, 11},14);
+        assertEquals("Yes",sumOfTwo);
+    }
 
 
 

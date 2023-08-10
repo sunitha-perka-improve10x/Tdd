@@ -14,8 +14,15 @@ public class SortingArrayTest {
     @Test
     public void givenNull_returnZero(){
         SortingArray sortingArray = new SortingArray();
-        int zero = sortingArray.findSortingArray(null,1);
+        int zero = sortingArray.findSortingArray(null);
         assertEquals(0, zero);
-
     }
+
+    @Test
+    public void givenEmpty_returnZero(){
+        SortingArray sortingArray = new SortingArray();
+        int zero = sortingArray.findSortingArray(new int[]{});
+        assertEquals(0, zero);
+    }
+
 }

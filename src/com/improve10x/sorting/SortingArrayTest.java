@@ -36,4 +36,10 @@ public class SortingArrayTest {
         int zero = sortingArray.findSortingArray(new int[]{1});
         assertEquals(1, zero);
     }
+    @Test
+    public void givenOneTwo_returnOne() {
+        SortingArray sortingArray = new SortingArray();
+        int zero = sortingArray.findSortingArray(new int[]{1, 2});
+        assertEquals(1, zero);
+    }
 }

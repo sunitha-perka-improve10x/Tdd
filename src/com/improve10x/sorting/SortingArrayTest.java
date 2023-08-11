@@ -24,5 +24,10 @@ public class SortingArrayTest {
         int zero = sortingArray.findSortingArray(new int[]{});
         assertEquals(0, zero);
     }
-
+    @Test
+    public void givenZero_returnOne(){
+        SortingArray sortingArray = new SortingArray();
+        int zero = sortingArray.findSortingArray(new int[]{0});
+        assertEquals(0, zero);
+    }
 }

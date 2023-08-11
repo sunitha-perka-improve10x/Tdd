@@ -6,7 +6,7 @@ public class SortingArray {
         if (arr == null || arr.length == 0) {
             return 0;
         }
-        return 0;
+        return 1;
     }
 }
 
